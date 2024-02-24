@@ -8,8 +8,8 @@ namespace ClassLibrary
 {
     internal class Discipline
     {
-        private string Name;
-        private string ShortName;
+        private string name;
+        private string shortName;
 
         public Discipline(string Name1, string ShortName1)
         {
@@ -19,26 +19,26 @@ namespace ClassLibrary
 
         //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
         
-        public string name
+        public string Name
         {
             get 
             { 
-                return Name; 
+                return name; 
             }
             set 
             { 
-                Name = value; 
+                name = value; 
             }
         }
-        public string shname
+        public string Shname
         {
             get 
             { 
-                return ShortName; 
+                return shortName; 
             }
             set 
             { 
-                ShortName = value; 
+                shortName = value; 
             }
         }
     }
