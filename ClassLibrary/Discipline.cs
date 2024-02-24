@@ -13,7 +13,7 @@ namespace ClassLibrary
 
         public Discipline(string Name1, string ShortName1)
         {
-            Name = Name1;
+            name = Name1;
             shortName = ShortName1;
         }
 
