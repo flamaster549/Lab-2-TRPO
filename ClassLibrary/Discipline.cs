@@ -13,8 +13,8 @@ namespace ClassLibrary
 
         public Discipline(string Name1, string ShortName1)
         {
-            Name = Name1;
-            ShortName = ShortName1;
+            name = Name1;
+            shortName = ShortName1;
         }
 
         //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
