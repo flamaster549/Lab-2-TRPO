@@ -18,15 +18,28 @@ namespace ClassLibrary
         }
 
         //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
+        
         public string name
         {
-            get { return Name; }
-            set { Name = value; }
+            get 
+            { 
+                return Name; 
+            }
+            set 
+            { 
+                Name = value; 
+            }
         }
         public string shname
         {
-            get { return ShortName; }
-            set { ShortName = value; }
+            get 
+            { 
+                return ShortName; 
+            }
+            set 
+            { 
+                ShortName = value; 
+            }
         }
     }
 }
