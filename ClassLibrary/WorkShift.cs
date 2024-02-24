@@ -8,5 +8,13 @@ namespace ClassLibrary
 {
     internal class WorkShift
     {
+                private string Name;
+        private DateTime date;
+        
+        public WorkShift(string Name, DateTime? date = null)
+        {
+            this.Name = Name;
+            this.date = date ?? DateTime.Now;
+        }
     }
 }
