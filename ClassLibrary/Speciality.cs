@@ -12,7 +12,7 @@ namespace ClassLibrary
         private string abbreviation;
         private DateTime creationDate;
     
-        public Specialty(string name, string abbreviation, DateTime creationDate)
+        public Speciality(string name, string abbreviation, DateTime creationDate)
         {
             this.name = name;
             this.abbreviation = abbreviation;
