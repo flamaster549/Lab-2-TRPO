@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Discipline //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
+    /// <summary>
+    ///     https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
+    /// </summary>
+    public class Discipline 
     {
         private string name;
         private string shortName;
