@@ -9,10 +9,10 @@ namespace ConsoleApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var TRPO = new ClassLibrary.Discipline("Технология разработки программного обеспечения", "ТРПО");
-            //Console.WriteLine($"{TRPO.Name} {TRPO.Shname}");
+            Console.WriteLine($"{TRPO.Name} {TRPO.Shname}");
         }
     }
 }
