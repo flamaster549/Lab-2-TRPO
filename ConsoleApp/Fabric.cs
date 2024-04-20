@@ -9,11 +9,16 @@ namespace ConsoleApp
 {
     internal static class Fabric
     {
-        public static Employee CreateEmploeyy()
+        public static Employee CreateEmployee()
+        {
+            Speciality speciality = CreateSpeciality();
+
+            return new Employee("","","",speciality);
+        }
+
+        public static Speciality CreateSpeciality()
         {
             return null;
         }
-
-        
     }
 }
