@@ -6,27 +6,42 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Discipline
+    /// <summary>
+    ///     https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
+    /// </summary>
+    public class Discipline 
     {
-        private string Name;
-        private string ShortName;
+        private string name;
+        private string shortName;
 
-        public Discipline(string Name1, string ShortName1)
+        public Discipline(string name, string shortName)
         {
-            Name = Name1;
-            ShortName = ShortName1;
+            Name = name;
+            Shname = shortName;
         }
 
-        //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit?usp=drive_link
-        public string name
+        
+        public string Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get 
+            { 
+                return name; 
+            }
+            set 
+            { 
+                name = value; 
+            }
         }
-        public string shname
+        public string Shname
         {
-            get { return ShortName; }
-            set { ShortName = value; }
+            get 
+            { 
+                return shortName; 
+            }
+            set 
+            { 
+                shortName = value; 
+            }
         }
     }
 }
