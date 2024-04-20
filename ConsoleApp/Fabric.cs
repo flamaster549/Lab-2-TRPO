@@ -16,6 +16,10 @@ namespace ConsoleApp
             return new Employee("","","",speciality);
         }
 
+        public static Discipline CreateDiscipline() 
+        {
+            return new Discipline("", "");
+        }
         public static Speciality CreateSpeciality()
         {
             return null;
