@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary;
 
 namespace ConsoleApp
 {
-    internal class Program
+    internal static class Fabric
     {
-        static void Main()
+        public static Employee CreateEmploeyy()
         {
+            return null;
         }
+
+        
     }
 }
