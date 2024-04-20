@@ -24,6 +24,7 @@ namespace ConsoleApp
                         break;
                     }
 
+
                 case "discipline":
                     {
                         Discipline discipline = Fabric.CreateDiscipline();
@@ -31,6 +32,7 @@ namespace ConsoleApp
                         break;
                     }
             }
+            
 
         }
     }
