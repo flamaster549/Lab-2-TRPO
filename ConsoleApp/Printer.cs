@@ -14,9 +14,16 @@ namespace ConsoleApp
             PrintSpeciality(employee.Speciality);
         }
 
+       
         public static void PrintSpeciality(Speciality speciality) 
         {
             Console.WriteLine(speciality);
         }
+       public static void PrintDiscipline(Discipline discipline)
+        {
+            Console.WriteLine(discipline.Name);
+        }
+
+
     }
 }

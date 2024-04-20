@@ -23,7 +23,16 @@ namespace ConsoleApp
                         Printer.PrintEmployee(employee);
                         break;
                     }
+
+
+                case "discipline":
+                    {
+                        Discipline discipline = Fabric.CreateDiscipline();
+                        Printer.PrintDiscipline(discipline);
+                        break;
+                    }
             }
+            
 
         }
     }
