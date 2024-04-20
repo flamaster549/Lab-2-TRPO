@@ -15,8 +15,8 @@ namespace ConsoleApp
         }
 
         public static void PrintSpeciality(Speciality speciality) 
-        { 
-        
+        {
+            Console.WriteLine(speciality);
         }
     }
 }
