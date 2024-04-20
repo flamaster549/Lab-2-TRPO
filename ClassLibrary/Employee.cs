@@ -9,7 +9,7 @@ namespace ClassLibrary
     /// <summary>
     /// Класс сотрудник
     /// </summary>
-    internal class Employee
+    public class Employee
     {
         /// <summary>
         /// Фамилия

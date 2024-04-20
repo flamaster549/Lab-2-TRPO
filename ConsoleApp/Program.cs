@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,26 @@ namespace ConsoleApp
     {
         static void Main()
         {
-            var TRPO = new ClassLibrary.Discipline("Технология разработки программного обеспечения", "ТРПО");
-            Console.WriteLine($"{TRPO.Name} {TRPO.Shname}");
+
+            Console.WriteLine("меню");
+            string step = Console.ReadLine();
+            switch (step)
+            {
+                case "emp":
+                    {
+                        Employee employee = Fabric.CreateEmployee();
+                        Printer.PrintEmployee(employee);
+                        break;
+                    }
+
+                case "discipline":
+                    {
+                        Discipline discipline = Fabric.CreateDiscipline();
+                        Printer.PrintDiscipline(discipline);
+                        break;
+                    }
+            }
+
         }
     }
 }
