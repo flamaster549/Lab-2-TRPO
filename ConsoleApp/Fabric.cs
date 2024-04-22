@@ -12,7 +12,7 @@ namespace ConsoleApp
         public static Employee CreateEmployee()
         {
             Speciality speciality = CreateSpeciality();
-
+            //Гыыыыыыыыыыыыыыыыыыыы
             return new Employee("","","",speciality);
         }
 
