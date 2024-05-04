@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Lesson
+    public class Lesson
     {
         private DateTime date;
         private Discipline discipline;
@@ -15,14 +15,20 @@ namespace ClassLibrary
         private Group group;
         private Pair pair;
 
-        public Lesson(Discipline discipline, Employee employee, Classroom classroom, Group group, Pair pair, DateTime? date = null)
+        public Lesson(Discipline discipline, Employee employee, Classroom classroom, Group group, Pair pair, DateTime date)
         {
-            this.date = date?? DateTime.Now;
+            this.date = date.Date;
             this.discipline = discipline;
             this.employee = employee;
             this.classroom = classroom;
             this.group = group;
             this.pair = pair;
+        }
+
+        public Lesson(Discipline discipline, Employee employee, Classroom classroom, Group group, Pair pair)
+            :this(discipline, employee, classroom, group, pair, DateTime.Today)
+        {
+
         }
 
         public DateTime Date

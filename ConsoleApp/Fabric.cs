@@ -9,11 +9,34 @@ namespace ConsoleApp
 {
     internal static class Fabric
     {
+        public static Lesson CreateLesson()
+        {
+            Console.WriteLine("Введите дату занятия:");
+
+            DateTime date;
+            while (!DateTime.TryParse(Console.ReadLine(), out date))
+            {
+                Console.WriteLine("Неверный формат данных");
+            }
+
+
+            return new Lesson(CreateDiscipline(), CreateEmployee(), CreateClassroom(), CreateGroup(), CreatePair(), date);
+        }
+        public static Pair CreatePair()
+        {
+            return null;
+        }
+        public static Group CreateGroup()
+        {
+            return null;
+        }
+        public static Classroom CreateClassroom()
+        {
+            return null;
+        }
         public static Employee CreateEmployee()
         {
-            Speciality speciality = CreateSpeciality();
-
-            return new Employee("","","",speciality);
+            return null;
         }
       
         public static Speciality CreateSpeciality()
@@ -23,7 +46,7 @@ namespace ConsoleApp
       
         public static Discipline CreateDiscipline() 
         {
-            return new Discipline("", "");
+            return null;
         }
     }
 }
