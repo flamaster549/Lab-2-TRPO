@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ClassLibrary;
 
@@ -46,7 +48,14 @@ namespace ConsoleApp
       
         public static Discipline CreateDiscipline() 
         {
-            return null;
+            DateTime creationDate;
+            return new Speciality("", "", creationDate);
+        }
+        public static Student CreateStudent()
+        {
+            Group group = CreateGroup();
+            DateTime date;  
+            return new Employee("", "", "", date, group);
         }
     }
 }
