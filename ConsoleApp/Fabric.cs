@@ -11,16 +11,7 @@ namespace ConsoleApp
 {
     internal static class Fabric
     {
-        /*public static Classroom CreateClassroom()
-        {
-            Employee employee = CreateEmployee();
-            Equipment[] equipment = CreateEquipment();
-            return new Classroom("", employee, 0, 0, equipment);
-        }
-        public static Discipline CreateDiscipline()
-        {
-            return new Discipline("", "");
-        }*/
+        
 
         public static Employee CreateEmployee()
         {
@@ -65,6 +56,29 @@ namespace ConsoleApp
             Group group = CreateGroup();
             DateTime date;  
             return new Employee("", "", "", date, group);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public static Classroom CreateClassroom()
+        {
+            Employee employee = CreateEmployee();
+            Equipment[] equipment = CreateEquipment();
+            return new Classroom("", employee, 0, 0, equipment);
+        }
+        public static Discipline CreateDiscipline()
+        {
+            return new Discipline("", "");
         }
     }
 }
