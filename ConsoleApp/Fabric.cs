@@ -1,19 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using ClassLibrary;
 
 namespace ConsoleApp
 {
     internal static class Fabric
     {
+        public static Lesson CreateLesson()
+        {
+            Console.WriteLine("Введите дату занятия:");
+
+            DateTime date;
+            while (!DateTime.TryParse(Console.ReadLine(), out date))
+            {
+                Console.WriteLine("Неверный формат данных");
+            }
+
+
+            return new Lesson(CreateDiscipline(), CreateEmployee(), CreateClassroom(), CreateGroup(), CreatePair(), date);
+        }
+        public static Pair CreatePair()
+        {
+            return null;
+        }
+        public static ClassLibrary.Group CreateGroup()
+        {
+            return null;
+        }
+        public static Classroom CreateClassroom()
+        {
+            return null;
+        }
         public static Employee CreateEmployee()
         {
-            Speciality speciality = CreateSpeciality();
-
-            return new Employee("","","",speciality);
+            return null;
         }
       
         public static Speciality CreateSpeciality()
@@ -23,7 +43,16 @@ namespace ConsoleApp
       
         public static Discipline CreateDiscipline() 
         {
-            return new Discipline("", "");
+            return null;
+        }
+        public static Student CreateStudent()
+        {
+            return null;
+        }
+
+        internal static Equipment CreateEquipment()
+        {
+            return null;
         }
     }
 }
