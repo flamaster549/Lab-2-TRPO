@@ -51,5 +51,14 @@ namespace ConsoleApp
             Console.WriteLine(pair);
         }
 
+        internal static void PrintEquipment(Equipment equipment)
+        {
+            Console.WriteLine(equipment);
+        }
+
+        internal static void PrintStudent(Student student)
+        {
+            Console.WriteLine(student);
+        }
     }
 }

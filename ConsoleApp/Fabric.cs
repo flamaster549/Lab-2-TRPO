@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using ClassLibrary;
 
 namespace ConsoleApp
@@ -28,7 +23,7 @@ namespace ConsoleApp
         {
             return null;
         }
-        public static Group CreateGroup()
+        public static ClassLibrary.Group CreateGroup()
         {
             return null;
         }
@@ -48,14 +43,16 @@ namespace ConsoleApp
       
         public static Discipline CreateDiscipline() 
         {
-            DateTime creationDate;
-            return new Speciality("", "", creationDate);
+            return null;
         }
         public static Student CreateStudent()
         {
-            Group group = CreateGroup();
-            DateTime date;  
-            return new Employee("", "", "", date, group);
+            return null;
+        }
+
+        internal static Equipment CreateEquipment()
+        {
+            return null;
         }
     }
 }

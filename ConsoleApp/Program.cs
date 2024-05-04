@@ -38,15 +38,15 @@ namespace ConsoleApp
                     case "ClassClassroom":
                         {
                             Console.Clear();
-                            Classroom classroom = Fabric.CreateEmployee();
-                            Printer.PrintEmployee(classroom);
+                            Classroom classroom = Fabric.CreateClassroom();
+                            Printer.PrintClassroom(classroom);
                             break;
                         }
                     case "ClassDiscipline":
                         {
                             Console.Clear();
                             Discipline discipline = Fabric.CreateDiscipline();
-                            Printer.PrintEmployee(discipline);
+                            Printer.PrintDiscipline(discipline);
                             break;
                         }
                     
@@ -62,42 +62,42 @@ namespace ConsoleApp
                         {
                             Console.Clear();
                             Equipment equipment = Fabric.CreateEquipment();
-                            Printer.PrintEmployee(equipment);
+                            Printer.PrintEquipment(equipment);
                             break;
                         }
                     case "ClassGroup":
                         {
                             Console.Clear();
-                            Group group = Fabric.CreateGroup();
-                            Printer.PrintEmployee(group);
+                            ClassLibrary.Group group = Fabric.CreateGroup();
+                            Printer.PrintGroup(group);
                             break;
                         }
                     case "ClassLesson":
                         {
                             Console.Clear();
                             Lesson lesson = Fabric.CreateLesson();
-                            Printer.PrintEmployee(lesson);
+                            Printer.PrintLesson(lesson);
                             break;
                         }
                     case "ClassPair":
                         {
                             Console.Clear();
                             Pair pair = Fabric.CreatePair();
-                            Printer.PrintEmployee(pair);
+                            Printer.PrintPair(pair);
                             break;
                         }
                     case "ClassSpeciality":
                         {
                             Console.Clear();
                             Speciality speciality = Fabric.CreateSpeciality();
-                            Printer.PrintEmployee(speciality);
+                            Printer.PrintSpeciality(speciality);
                             break;
                         }
                     case "ClassStudent":
                         {
                             Console.Clear();
                             Student student = Fabric.CreateStudent();
-                            Printer.PrintEmployee(student);
+                            Printer.PrintStudent(student);
                             break;
                         }
                     
