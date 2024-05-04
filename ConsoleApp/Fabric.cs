@@ -21,6 +21,7 @@ namespace ConsoleApp
         {
             return new Discipline("", "");
         }
+
         public static Employee CreateEmployee()
         {
             Speciality speciality = CreateSpeciality();
@@ -62,7 +63,7 @@ namespace ConsoleApp
         public static Student CreateStudent()
         {
             Group group = CreateGroup();
-            DateTime date;
+            DateTime date;  
             return new Employee("", "", "", date, group);
         }
     }
