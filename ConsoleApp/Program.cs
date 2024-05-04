@@ -34,7 +34,7 @@ namespace ConsoleApp
                 command = Console.ReadLine();
                 switch (command)
                 {
-                    /*
+                    
                     case "ClassClassroom":
                         {
                             Console.Clear();
@@ -49,7 +49,7 @@ namespace ConsoleApp
                             Printer.PrintEmployee(discipline);
                             break;
                         }
-                    */
+                    
                     case "ClassEmployee":
                         {
                             Console.Clear();
@@ -57,7 +57,7 @@ namespace ConsoleApp
                             Printer.PrintEmployee(employee);
                             break;
                         }
-                    /* 
+                    
                     case "ClassEquipment":
                         {
                             Console.Clear();
@@ -100,7 +100,7 @@ namespace ConsoleApp
                             Printer.PrintEmployee(student);
                             break;
                         }
-                    */
+                    
                     default: break;
                 }
                 System.Threading.Thread.Sleep(2000);

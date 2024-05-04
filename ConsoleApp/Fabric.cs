@@ -11,7 +11,7 @@ namespace ConsoleApp
 {
     internal static class Fabric
     {
-        public static Classroom CreateClassroom()
+        /*public static Classroom CreateClassroom()
         {
             Employee employee = CreateEmployee();
             Equipment[] equipment = CreateEquipment();
@@ -20,7 +20,7 @@ namespace ConsoleApp
         public static Discipline CreateDiscipline()
         {
             return new Discipline("", "");
-        }
+        }*/
 
         public static Employee CreateEmployee()
         {
