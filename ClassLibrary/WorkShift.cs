@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class WorkShift
+    public class WorkShift
     {
-                private string Name;
-        private DateTime date;
-        
+        public string Name;
+        public DateTime date;
+
         public WorkShift(string Name, DateTime? date = null)
         {
             this.Name = Name;
