@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    //https://docs.google.com/document/d/1qZEaADy71rJCOuNSTpyhh-f-NhSL2a6DCm88EgFO20o/edit
     public class Group
     {
         private string name;
@@ -38,6 +39,11 @@ namespace ClassLibrary
         {
             get { return groupSize; }
             set { groupSize = value; }
+        }
+        public uint EntranceYear
+        {
+            get { return entranceYear;}
+            set { entranceYear = value;}
         }
         public Speciality Speciality
         {
