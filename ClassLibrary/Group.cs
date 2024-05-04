@@ -15,7 +15,7 @@ namespace ClassLibrary
         private Speciality speciality;
         private Employee employee;
 
-        public Group(string Name1, string ShortName1, uint GroupSize1, uint EntranceYear1, Speciality speciality1, Employee employee1)
+        public Group(string Name1, string ShortName1, uint GroupSize1, uint EntranceYear1, Speciality speciality1, Employee employe1e1)
         {
             Name = Name1;
             ShortName = ShortName1;
