@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Group
+   public class Group
     {
         private string name;
         private string shortName;
@@ -15,14 +15,14 @@ namespace ClassLibrary
         private Speciality speciality;
         private Employee employee;
 
-        public Group(string Name1, string ShortName1, uint GroupSize1, uint EntranceYear1, Speciality Speciality1, Employee Employee1)
+        public Group(string name, string shortName, uint groupSize, uint entranceYear, Speciality speciality, Employee employee)
         {
-            name = Name1;
-            shortName = ShortName1;
-            groupSize = GroupSize1;
-            entranceYear = EntranceYear1;
-            speciality = Speciality1;
-            employee = Employee1;
+            this.name = name;
+            this.shortName = shortName;
+            this.groupSize = groupSize;
+            this.entranceYear = entranceYear;
+            this.speciality = speciality;
+            this.employee = employee;
         }
         public string Name
         {
@@ -39,12 +39,12 @@ namespace ClassLibrary
             get { return groupSize; }
             set { groupSize = value; }
         }
-        public Speciality Spec
+        public Speciality Speciality
         {
             get { return speciality; }
             set { speciality = value; }
         }
-        public Employee Empl
+        public Employee Employee
         {
             get { return employee; }
             set { employee = value; }
