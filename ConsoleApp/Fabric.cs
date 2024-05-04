@@ -12,6 +12,7 @@ namespace ConsoleApp
     internal static class Fabric
     {
         
+<<<<<<< HEAD
 
 
 
@@ -37,6 +38,8 @@ namespace ConsoleApp
 
 
 
+=======
+>>>>>>> cfccbb96bed17337837a0b2f7a7456f5c4453341
         public static Employee CreateEmployee()
         {
             Speciality speciality = CreateSpeciality();
