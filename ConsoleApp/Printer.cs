@@ -25,13 +25,7 @@ namespace ConsoleApp
         {
             PrintSpeciality(employee.Speciality);
         }
-<<<<<<< HEAD
-        public static void PrintDiscipline(Discipline discipline)
-        {
-            Console.WriteLine(discipline.Name);
-        }
-=======
->>>>>>> 61fa3403ad5c02149d0992316eda63f275e428e8
+
 
        
         public static void PrintSpeciality(Speciality speciality) 

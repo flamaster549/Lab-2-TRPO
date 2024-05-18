@@ -16,22 +16,7 @@ namespace ConsoleApp
             string command;
             //Тут будут жить твои переменные
             do
-            {
-<<<<<<< HEAD
-                case "emp":
-                    {
-                        Employee employee = Fabric.CreateEmployee();
-                        Printer.PrintEmployee(employee);
-                        break;
-                    }
-
-                case "discipline":
-                    {
-                        Discipline discipline = Fabric.CreateDiscipline();
-                        Printer.PrintDiscipline(discipline);
-                        break;
-                    }
-=======
+            { 
                 Console.Clear();
                 Console.WriteLine("ClassClassroom. Выводит тип класса");
                 Console.WriteLine("ClassDiscipline. Выводит тип класса");
@@ -119,7 +104,7 @@ namespace ConsoleApp
                     default: break;
                 }
                 System.Threading.Thread.Sleep(2000);
->>>>>>> 61fa3403ad5c02149d0992316eda63f275e428e8
+
             }
             while (command != "Exit");
 
