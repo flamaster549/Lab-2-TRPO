@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Speciality
+    public class Speciality
     {   
-        private string name;
-        private string abbreviation;
-        private DateTime creationDate;
+        public string name;
+        public string abbreviation;
+        public DateTime creationDate;
     
         public Speciality(string name, string abbreviation, DateTime creationDate)
         {
