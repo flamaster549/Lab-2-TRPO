@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-   internal class Pair
+    public class Pair
     {
         private DateTime startTime;
         private DateTime endTime;
         private DateTime breakStartTime;
         private DateTime breakEndTime;
         private WorkShift workShift;
-        public Pair(DateTime startTime1, DateTime endTime1, DateTime breakStartTime1, DateTime breakEndTime1, WorkShift workShift1)
+        public Pair(DateTime startTime, DateTime endTime, DateTime breakStartTime, DateTime breakEndTime, WorkShift workShift)
         {
-            startTime = startTime1 != DateTime.MinValue ? startTime1 : DateTime.Now;
-            endTime = endTime1 != DateTime.MinValue ? endTime1 : DateTime.Now;
-            breakStartTime = breakStartTime != DateTime.MinValue ? breakStartTime : DateTime.Now;
-            breakEndTime = breakEndTime1 != DateTime.MinValue ? breakEndTime1 : DateTime.Now;
-            workShift = workShift1;
+            StartTime = startTime != DateTime.MinValue ? startTime : DateTime.Now;
+            EndTime = endTime != DateTime.MinValue ? endTime : DateTime.Now;
+            BreakStartTime = breakStartTime != DateTime.MinValue ? breakStartTime : DateTime.Now;
+            BreakEndTime = breakEndTime != DateTime.MinValue ? breakEndTime : DateTime.Now;
+            WorkShift = workShift;
         }
         public WorkShift WorkShift
         {
