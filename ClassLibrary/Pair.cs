@@ -12,9 +12,20 @@ namespace ClassLibrary
         private DateTime endTime;
         private DateTime breakStartTime;
         private DateTime breakEndTime;
-        //private OtherClass otherClass;
-
-
+        private WorkShift workShift;
+        public Pair(DateTime startTime, DateTime endTime, DateTime breakStartTime, DateTime breakEndTime, WorkShift workShift)
+        {
+            StartTime = startTime != DateTime.MinValue ? startTime : DateTime.Now;
+            EndTime = endTime != DateTime.MinValue ? endTime : DateTime.Now;
+            BreakStartTime = breakStartTime != DateTime.MinValue ? breakStartTime : DateTime.Now;
+            BreakEndTime = breakEndTime != DateTime.MinValue ? breakEndTime : DateTime.Now;
+            WorkShift = workShift;
+        }
+        public WorkShift WorkShift
+        {
+            get { return workShift; }
+            set { workShift = value; }
+        }
         public DateTime StartTime
         {
             get { return startTime; }
@@ -28,22 +39,12 @@ namespace ClassLibrary
         public DateTime BreakStartTime
         {
             get { return breakStartTime; }
-            set {  breakStartTime = value; }
+            set { breakStartTime = value; }
         }
-
         public DateTime BreakEndTime
         {
             get { return breakEndTime; }
             set { breakEndTime = value; }
-        }
-
-        public Pair(DateTime startTime, DateTime endTime, DateTime breakStartTime, DateTime breakEndTime, string shiftLink)
-        {
-            this.startTime = startTime;
-            this.endTime = endTime;
-            this.breakStartTime = breakStartTime;
-            this.breakEndTime = breakEndTime;
-            //this.otherClass = new OtherClass(shiftLink);
         }
     }
 }
