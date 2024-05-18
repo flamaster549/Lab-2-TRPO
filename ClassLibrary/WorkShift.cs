@@ -8,12 +8,24 @@ namespace ClassLibrary
 {
     public class WorkShift
     {
-        public string Name;
-        public DateTime date;
+        private string name;
+        public string Name
+        { 
+            get { return Name; } 
+            set { Name = value; } 
+        }
 
-        public WorkShift(string Name, DateTime? date = null)
+
+        private DateTime date;
+        public DateTime Date
         {
-            this.Name = Name;
+            get { return date; }
+            set { date = value; }
+        }
+
+        public WorkShift(string name, DateTime? date = null)
+        {
+            this.name = name;
             this.date = date ?? DateTime.Now;
         }
     }
