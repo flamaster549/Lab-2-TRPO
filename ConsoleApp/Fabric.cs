@@ -88,16 +88,12 @@ namespace ConsoleApp
             Console.WriteLine("Введите имя сотрудника:");
             string firstName = Console.ReadLine();
 
-<<<<<<< HEAD
-        public static Discipline CreateDiscipline() 
-        {
-            return new Discipline("", "");
-=======
-            Console.WriteLine("Введите отчество сотрудника:");
+
+        
             string patronypicName = Console.ReadLine();
 
             return new Employee(lastName, firstName, patronypicName, CreateSpeciality());
->>>>>>> 61fa3403ad5c02149d0992316eda63f275e428e8
+
         }
         public static Speciality CreateSpeciality()
         {
