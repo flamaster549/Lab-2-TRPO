@@ -89,7 +89,8 @@ namespace ConsoleApp
             string firstName = Console.ReadLine();
 
 
-        
+            Console.WriteLine("Введите отчество сотрудника:");
+
             string patronypicName = Console.ReadLine();
 
             return new Employee(lastName, firstName, patronypicName, CreateSpeciality());
