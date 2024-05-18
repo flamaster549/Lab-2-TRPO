@@ -17,6 +17,7 @@ namespace ConsoleApp
             //Тут будут жить твои переменные
             do
             {
+
                 Console.Clear();
                 Console.WriteLine("ClassClassroom. Выводит тип класса");
                 Console.WriteLine("ClassDiscipline. Выводит тип класса");
@@ -104,6 +105,7 @@ namespace ConsoleApp
                     default: break;
                 }
                 System.Threading.Thread.Sleep(2000);
+
             }
             while (command != "Exit");
 

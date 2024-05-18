@@ -14,6 +14,29 @@ namespace ClassLibrary
         private DateTime breakEndTime;
         //private OtherClass otherClass;
 
+
+        public DateTime StartTime
+        {
+            get { return startTime; }
+            set { startTime = value; }
+        }
+        public DateTime EndTime
+        {
+            get { return endTime; }
+            set { endTime = value; }
+        }
+        public DateTime BreakStartTime
+        {
+            get { return breakStartTime; }
+            set {  breakStartTime = value; }
+        }
+
+        public DateTime BreakEndTime
+        {
+            get { return breakEndTime; }
+            set { breakEndTime = value; }
+        }
+
         public Pair(DateTime startTime, DateTime endTime, DateTime breakStartTime, DateTime breakEndTime, string shiftLink)
         {
             this.startTime = startTime;
