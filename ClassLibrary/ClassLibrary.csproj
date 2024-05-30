@@ -44,6 +44,7 @@
     <Compile Include="Classroom.cs" />
     <Compile Include="Discipline.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Equipment.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Lesson.cs" />
     <Compile Include="Pair.cs" />

@@ -6,14 +6,29 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class WorkShift
+    /// <summary>
+    ///     https://docs.google.com/document/d/1QSQdwb3s6IOh4avDr_-vpiYnII_80yUAVL3H_JkLNXQ/edit?usp=sharing
+    /// </summary>
+    public class WorkShift
     {
-                private string Name;
+        private string name;
+        public string Name
+        { 
+            get { return name; } 
+            set { name = value; } 
+        }
+
+
         private DateTime date;
-        
-        public WorkShift(string Name, DateTime? date = null)
+        public DateTime Date
         {
-            this.Name = Name;
+            get { return date; }
+            set { date = value; }
+        }
+
+        public WorkShift(string name, DateTime? date = null)
+        {
+            this.name = name;
             this.date = date ?? DateTime.Now;
         }
     }
