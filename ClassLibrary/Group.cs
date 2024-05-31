@@ -6,45 +6,51 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    //https://docs.google.com/document/d/1qZEaADy71rJCOuNSTpyhh-f-NhSL2a6DCm88EgFO20o/edit
     public class Group
     {
-        private string Name;
-        private string ShortName;
-        private uint GroupSize;
-        private uint EntranceYear;
+        private string name;
+        private string shortName;
+        private uint groupSize;
+        private uint entranceYear;
         private Speciality speciality;
         private Employee employee;
 
-        public Group(string Name1, string ShortName1, uint GroupSize1, uint EntranceYear1, Speciality speciality1, Employee employee1)
+        public Group(string name, string shortName, uint groupSize, uint entranceYear, Speciality speciality, Employee employee)
         {
-            Name = Name1;
-            ShortName = ShortName1;
-            GroupSize = GroupSize1;
-            EntranceYear = EntranceYear1;
-            speciality = speciality1;
-            employee = employee1;
+            this.name = name;
+            this.shortName = shortName;
+            this.groupSize = groupSize;
+            this.entranceYear = entranceYear;
+            this.speciality = speciality;
+            this.employee = employee;
         }
-        public string name
+        public string Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get { return name; }
+            set { name = value; }
         }
-        public string shname
+        public string ShortNname
         {
-            get { return ShortName; }
-            set { ShortName = value; }
+            get { return shortName; }
+            set { shortName = value; }
         }
-        public uint groupSize
+        public uint GroupSize
         {
-            get { return GroupSize; }
-            set { GroupSize = value; }
+            get { return groupSize; }
+            set { groupSize = value; }
         }
-        public Speciality spec
+        public uint EntranceYear
+        {
+            get { return entranceYear;}
+            set { entranceYear = value;}
+        }
+        public Speciality Speciality
         {
             get { return speciality; }
             set { speciality = value; }
         }
-        public Employee empl
+        public Employee Employee
         {
             get { return employee; }
             set { employee = value; }

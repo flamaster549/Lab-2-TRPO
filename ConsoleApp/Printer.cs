@@ -26,6 +26,7 @@ namespace ConsoleApp
             PrintSpeciality(employee.Speciality);
         }
 
+
        
         public static void PrintSpeciality(Speciality speciality) 
         {
