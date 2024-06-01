@@ -16,7 +16,7 @@ namespace ClassLibrary
         private Employee employee;
         private int places;
         private int windows;
-        private Equipment[] equipment;
+        private List<Equipment> equipment;
 
         public string Name
         {
@@ -30,7 +30,7 @@ namespace ClassLibrary
             }
         }
 
-        public Employee EEmployee
+        public Employee Employee
         {
             get
             {
@@ -66,7 +66,7 @@ namespace ClassLibrary
             }
         }
 
-        public Equipment[] EEquipment
+        public List<Equipment> Equipment
         {
             get
             {
@@ -78,13 +78,13 @@ namespace ClassLibrary
             }
         }
 
-        public Classroom(string name, Employee EmpLink, int places, int windows, Equipment[] EquLink)
+        public Classroom(string name, Employee EmpLink, int places, int windows, List<Equipment> EquLink)
         {
             this.Name = name;
-            this.EEmployee = EmpLink;
+            this.Employee = EmpLink;
             this.Places = places;
             this.Windows = windows;
-            this.EEquipment = EquLink;
+            this.Equipment = EquLink;
         }
     }
 }

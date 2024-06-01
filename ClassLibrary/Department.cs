@@ -11,9 +11,9 @@ namespace ClassLibrary
         private string name;
         private Employee leader;
         private Organization organizationLink;
-        public string Name { get; set; }
-        public Employee Leader { get; set; }
-        public Organization OrganizationLink { get; set; }
+        public string Name { get { return name; } set { name = value; } }
+        public Employee Leader { get { return leader; } set { leader = value; } }
+        public Organization OrganizationLink { get { return organizationLink; } set { organizationLink = value; } }
 
         public Department(string name, Employee leader, Organization organizationlink)
         {
