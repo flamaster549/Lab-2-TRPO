@@ -38,9 +38,7 @@ namespace ConsoleApp
             while (!DateTime.TryParse(Console.ReadLine(), out breakEndTime))
             { Console.WriteLine("Неверный формат данных"); }
 
-            string otherClass = "";
-
-            return new Pair(startTime, endTime, breakStartTime, breakEndTime, otherClass);
+            return new Pair(startTime, endTime, breakStartTime, breakEndTime, CreateWorkshift());
         }
         public static ClassLibrary.Group CreateGroup()
         {
@@ -139,9 +137,13 @@ namespace ConsoleApp
 
             return new Student(name1, name2, name3, date, CreateGroup());
         }
-        internal static Equipment CreateEquipment()
+        public static Equipment CreateEquipment()
         {
             return new Equipment();
+        }
+        public static WorkShift CreateWorkshift()
+        {
+            return null;
         }
     }
 }
