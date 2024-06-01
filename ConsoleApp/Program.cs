@@ -28,6 +28,9 @@ namespace ConsoleApp
                 Console.WriteLine("ClassPair. Выводит тип класса");
                 Console.WriteLine("ClassSpeciality. Выводит тип класса");
                 Console.WriteLine("ClassStudent. Выводит тип класса");
+                Console.WriteLine("ClassDepartment. Выводит тип класса");
+                Console.WriteLine("ClassPosition. Выводит тип класса");
+                Console.WriteLine("ClassWorkShift. Выводит тип класса");
 
                 Console.WriteLine("Exit. Выход из программы");
                 Console.WriteLine();
