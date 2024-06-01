@@ -62,7 +62,7 @@ namespace ConsoleApp
                     case "ClassEquipment":
                         {
                             Console.Clear();
-                            Equipment equipment = Fabric.CreateEquipment();
+                            List<Equipment> equipment = Fabric.CreateEquipment();
                             Printer.PrintEquipment(equipment);
                             break;
                         }
@@ -101,7 +101,27 @@ namespace ConsoleApp
                             Printer.PrintStudent(student);
                             break;
                         }
-                    
+                    case "ClassDepartment":
+                        {
+                            Console.Clear();
+                            Department department = Fabric.CreateDepartment();
+                            Printer.PrintDepartment(department);
+                            break;
+                        }
+                    case "ClassPosition":
+                        {
+                            Console.Clear();
+                            Position position = Fabric.CreatePosition();
+                            Printer.PrintPosition(position);
+                            break;
+                        }
+                    case "ClassWorkShift":
+                        {
+                            Console.Clear();
+                            WorkShift workShift = Fabric.CreateWorkShift();
+                            Printer.PrintWorkShift(workShift);
+                            break;
+                        }
                     default: break;
                 }
                 System.Threading.Thread.Sleep(2000);

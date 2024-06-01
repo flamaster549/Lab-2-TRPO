@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using ClassLibrary;
 
@@ -38,9 +39,7 @@ namespace ConsoleApp
             while (!DateTime.TryParse(Console.ReadLine(), out breakEndTime))
             { Console.WriteLine("Неверный формат данных"); }
 
-            string otherClass = "";
-
-            return new Pair(startTime, endTime, breakStartTime, breakEndTime, otherClass);
+            return new Pair(startTime, endTime, breakStartTime, breakEndTime, CreateWorkShift());
         }
         public static ClassLibrary.Group CreateGroup()
         {
@@ -77,8 +76,8 @@ namespace ConsoleApp
             while (!int.TryParse(Console.ReadLine(), out windows))
             { Console.WriteLine("Неверный формат данных"); }
 
-            return new Classroom(name, CreateEmployee(), places, windows, null);
-            //return new Classroom(name, CreateEmployee(), places, windows, CreateEquipment());
+            //return new Classroom(name, CreateEmployee(), places, windows, null);
+            return new Classroom(name, CreateEmployee(), places, windows, CreateEquipment());
         }
         public static Employee CreateEmployee()
         {
@@ -139,9 +138,39 @@ namespace ConsoleApp
 
             return new Student(name1, name2, name3, date, CreateGroup());
         }
-        internal static Equipment CreateEquipment()
+        public static List<Equipment> CreateEquipment()
         {
-            return new Equipment();
+            return new List<Equipment>();
+        }
+        public static WorkShift CreateWorkShift()
+        {
+            Console.WriteLine("Введите название смены:");
+            string name = Console.ReadLine();
+
+            return new WorkShift(name);
+        }
+        public static Position CreatePosition()
+        {
+            Console.WriteLine("Введите название:");
+            string title = Console.ReadLine();
+            Console.WriteLine("Введите название:");
+            decimal salary;
+            while (!decimal.TryParse(Console.ReadLine(), out salary))
+            { Console.WriteLine("Неверный формат данных"); }
+
+            return new Position(title, salary, CreateDepartment());
+        }
+
+        public static Department CreateDepartment()
+        {
+            Console.WriteLine("Введите название:");
+            string name = Console.ReadLine();
+
+            return new Department(name, CreateEmployee(), CreateOrganization());
+        }
+        public static Organization CreateOrganization()
+        {
+            return new Organization();
         }
     }
 }
